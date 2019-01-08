@@ -20,8 +20,8 @@ public class Main {
     private static Random random = new Random();
 
     private static void setUpStudents(EntityManager entityManager, List<Subject> subjectList) {
-        List<String> names = Arrays.asList("Sebastian", "Michał", "Krzysztof", "Michał");
-        List<String> surnames = Arrays.asList("Madejski", "Czapnik", "Dymkowski", "Giereś");
+        List<String> names = Arrays.asList("Sebastian", "Ryszard", "Jacek", "Michał");
+        List<String> surnames = Arrays.asList("Madejski", "Andrzejewski", "Graniecki", "Pałeczka");
         for(int i=0;i<4;i++) {
             Student student = new Student(null, names.get(i), surnames.get(i));
             subjectList.forEach(s -> {
